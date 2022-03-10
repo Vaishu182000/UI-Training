@@ -1,0 +1,110 @@
+@import 'dashboardscss.scss';
+$list-style-type:none;
+
+@media screen and (max-width:1400px) and (min-width:950px) {
+    .align-flex{
+        display: $display;
+    }
+
+    .header-col2{
+        width: 15%;
+        float: $float;
+        margin: 5px 0px;
+    }
+    
+    .header-col6{
+        width: 50%;
+        float: $float;
+        list-style-type: $list-style-type;
+    }
+    
+    .header-padding{
+        padding: 0 15px;
+    }
+    
+    .header-col4{
+        width: 30%;
+        justify-content: $justify-content-end;
+    }
+    
+    .header-brand-name{
+        margin-bottom: 0%;
+        margin-top: 2%;
+        padding: 5px;
+    }
+    
+    .button-padding{
+        border-radius: 10px;
+        padding: 9px 35px;
+        margin: 5px 10px;
+    }
+
+    .login-padding{
+        border: 1px solid $button-color;
+        color: $button-color;
+        background-color: $background-color;
+    }
+
+    .signup-padding{
+        background-color: $button-color;
+        color: black;
+        border: 0px;
+    }
+
+    .dashboard-col8{
+        width: 50%;
+        margin: 50px;
+    }
+    
+    .dashboard-col4{
+        width: 50%;
+    }
+    .dashboard-maintext{
+        margin: 15px;
+    }
+
+    .dashboard-maintext-small{
+        visibility: $visibility-hidden;
+    }
+
+    .dashboard-maintext h1{
+        font-size: 35px;
+    }
+
+    .dashboard-maintext h1,p{
+        margin: 0px;
+        padding: 3px;
+    }
+
+    .container{
+        margin-top: 80px;
+        margin-bottom: 30px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }    
+
+    .header-icon{
+        visibility: $visibility-hidden;
+    }
+
+    .logo-last{
+        justify-content:$justify-content-around;
+    }
+
+    .logo-last img{
+        width: 50%;
+        height: 40px;
+        filter: $filter;
+    }
+
+    .logo-last svg{
+        width: 100px;
+        height: 40px;
+        filter: $filter;
+    }
+
+    .container1{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}

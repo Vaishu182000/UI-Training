@@ -1,0 +1,16 @@
+$float:left;
+$display:flex;
+$visibility-hidden:hidden;
+$visibility-visibile:visible;
+$filter:grayscale(1);
+$justify-content-end:flex-end;
+$justify-content-around:space-around;
+$button-color:#0FB2BA;
+$background-color:#152452;
+$position-relative:relative;
+$text-color:white;
+
+.dashboard{
+  background-color: $background-color;
+  color: $text-color;
+}

@@ -1,0 +1,81 @@
+body{
+    background-color: #e0da84;
+}
+.hand-center{
+    width: 19%;
+    height: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fingers{
+    display:flex;
+    align-items: flex-end;
+}
+
+.finger1{
+    width: 50px;
+    height: 130px;
+    border-radius: 20px;
+    background-color: black;
+    margin: 5px;
+}
+
+.finger2{
+    width: 50px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: black;
+    margin: 5px;
+}
+
+.finger3{
+    width: 50px;
+    height: 130px;
+    border-radius: 20px;
+    background-color: black;
+    margin: 5px;
+}
+
+.finger4{
+    width: 50px;
+    height: 110px;
+    border-radius: 20px;
+    background-color: black;
+    margin: 5px;
+}
+
+.finger5{
+    width: 50px;
+    height: 170px;
+    background-color: black;
+    border-radius: 30px;
+    margin: 10px;
+    border: 8px solid #e0da84;
+    transform: rotate(55deg);
+    position: fixed;
+   margin-top: -90px;
+   margin-left: 20px;
+}
+
+.palm{
+    width: 240px;
+    height: 100px;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hand{
+    width: 100px;
+    height: 120px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+}

@@ -1,0 +1,129 @@
+@import 'PC-View.scss';
+$text-align-center:center;
+
+@media screen and (max-width:520px) {
+    .header-col2{
+        width: 90%;
+        float: $float;
+        margin: 5px 0px;
+        height: 20%;
+    }
+
+    .header-col6{
+        visibility: $visibility-hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    .header-col4{
+        width: 0%;
+        justify-content: $justify-content-end;
+        visibility: $visibility-hidden;
+        position: $position-relative;
+        height: 0%;
+    }
+
+    .header-icon{
+        width: 10%;
+        justify-content: $justify-content-end;
+        visibility: $visibility-visibile;
+        margin-top: 3px;
+    }
+
+    .dashboard-col4{
+        width: 100%;
+    }
+
+    .container{
+        margin: 20px;
+    }
+
+    .dashboard-col8{
+        width: 100%;
+    }
+
+    .dashboard-col4{
+        width: 0%;
+    }
+
+    .dashboard-maintext{
+        margin: 15px;
+        text-align: $text-align-center;
+    }
+
+    .dashboard-maintext-small{
+        visibility: $visibility-visibile;
+        text-align: $text-align-center;
+        font-size: 15px;
+    }
+
+    .dashboard-maintext h1{
+        font-size: 30px;
+    }
+
+    .dashboard-maintext p{
+        width: 0%;
+        height: 0%;
+        visibility: $visibility-hidden;
+    }
+
+    .dashboard-maintext h1,p{
+        margin: 0px;
+        padding: 3px;
+    }
+
+    .align-small{
+        display: $display;
+        height: 20%;
+    }
+
+    .header-padding{
+        padding: 0 15px;
+    }
+    
+    .header-brand-name{
+        margin-bottom: 0%;
+        margin-top: 0%;
+        padding: 5px;
+    }
+
+    .button-padding{
+        border-radius: 10px;
+        padding: 9px 55px;
+        margin: 5px 10px;
+        width: 100%;
+    }
+
+    .login-padding{
+        border: 1px solid $button-color;
+        color: $button-color;
+        background-color: $background-color;
+    }
+
+    .signup-padding{
+        background-color: $button-color;
+        color: black;
+        border: 2px solid $button-color;
+    }
+
+    .header-brand-name{
+        margin-bottom: 0%;
+        margin-top: 0%;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+
+    .dashboard-col4 img{
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .dashboard-button{
+        margin-top: 25px;
+    }
+
+    .logo-last{
+        visibility: $visibility-hidden;
+    }
+}

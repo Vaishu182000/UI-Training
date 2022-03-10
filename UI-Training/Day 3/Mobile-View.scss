@@ -1,0 +1,135 @@
+// @use 'dashboardscss.scss';
+@import 'Tablet-view.scss';
+$displayblock:block;
+$margin-left-auto:auto;
+$margin-right-auto:auto;
+
+@media screen  and (max-width:951px) and (min-width:521px){
+    .header-col2{
+        width: 90%;
+        float: $float;
+        margin: 5px 0px;
+        height: 20%;
+    }
+
+    .header-col6{
+        visibility: $visibility-hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    .header-col4{
+        width: 0%;
+        justify-content: $justify-content-end;
+        visibility: $visibility-hidden;
+        position: $position-relative;
+        height: 0%;
+    }
+
+    .header-icon{
+        width: 10%;
+        justify-content: $justify-content-end;
+        visibility: $visibility-visibile;
+        margin-top: 3px;
+    }
+
+    .dashboard-col4{
+        display: $displayblock;
+        margin-left: $margin-left-auto;
+        margin-right: $margin-right-auto;
+        width: 50%;
+    }
+
+    .container{
+        margin: 20px;
+    }
+
+    .dashboard-col8{
+        display: $displayblock;
+        margin-left: $margin-left-auto;
+        margin-right: $margin-right-auto;
+        width: 50%;
+    }
+
+    .dashboard-maintext{
+        margin: 15px;
+        text-align: $text-align-center;
+    }
+
+    .dashboard-maintext-small{
+        visibility: $visibility-visibile;
+        text-align: $text-align-center;
+    }
+
+    .dashboard-maintext h1{
+        font-size: 35px;
+    }
+
+    .dashboard-maintext p{
+        width: 0%;
+        height: 0%;
+        visibility: $visibility-hidden;
+    }
+
+    .dashboard-maintext h1,p{
+        margin: 0px;
+        padding: 3px;
+    }
+
+    .align-small{
+        display: $display;
+        height: 20%;
+    }
+
+    .header-padding{
+        padding: 0 15px;
+    }
+    
+    .header-brand-name{
+        margin-bottom: 0%;
+        margin-top: 0%;
+        padding: 5px;
+    }
+
+    .button-padding{
+        border-radius: 10px;
+        padding: 9px 35px;
+        margin: 5px 10px;
+    }
+
+    .login-padding{
+        border: 1px solid $button-color;
+        color: $button-color;
+        background-color: $background-color;
+        width: 40%;
+    }
+
+    .signup-padding{
+        background-color: $button-color;
+        color: black;
+        border: 0px;
+        width: 40%;
+    }
+
+    .header-brand-name{
+        margin-bottom: 0%;
+        margin-top: 0%;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+
+    .dashboard-col4 img{
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .dashboard-button{
+        margin-top: 25px;
+        width: 100%
+    }
+
+    .logo-last{
+        visibility: $visibility-hidden;
+    }
+}

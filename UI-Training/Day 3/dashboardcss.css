@@ -1,0 +1,370 @@
+.dashboard {
+  background-color: #152452;
+  color: white;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 950px) {
+  .align-flex {
+    display: flex;
+  }
+
+  .header-col2 {
+    width: 15%;
+    float: left;
+    margin: 5px 0px;
+  }
+
+  .header-col6 {
+    width: 50%;
+    float: left;
+    list-style-type: none;
+  }
+
+  .header-padding {
+    padding: 0 15px;
+  }
+
+  .header-col4 {
+    width: 30%;
+    justify-content: flex-end;
+  }
+
+  .header-brand-name {
+    margin-bottom: 0%;
+    margin-top: 2%;
+    padding: 5px;
+  }
+
+  .button-padding {
+    border-radius: 10px;
+    padding: 9px 35px;
+    margin: 5px 10px;
+  }
+
+  .login-padding {
+    border: 1px solid #0FB2BA;
+    color: #0FB2BA;
+    background-color: #152452;
+  }
+
+  .signup-padding {
+    background-color: #0FB2BA;
+    color: black;
+    border: 0px;
+  }
+
+  .dashboard-col8 {
+    width: 50%;
+    margin: 50px;
+  }
+
+  .dashboard-col4 {
+    width: 50%;
+  }
+
+  .dashboard-maintext {
+    margin: 15px;
+  }
+
+  .dashboard-maintext-small {
+    visibility: hidden;
+  }
+
+  .dashboard-maintext h1 {
+    font-size: 35px;
+  }
+
+  .dashboard-maintext h1, p {
+    margin: 0px;
+    padding: 3px;
+  }
+
+  .container {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .header-icon {
+    visibility: hidden;
+  }
+
+  .logo-last {
+    justify-content: space-around;
+  }
+
+  .logo-last img {
+    width: 50%;
+    height: 40px;
+    filter: grayscale(1);
+  }
+
+  .logo-last svg {
+    width: 100px;
+    height: 40px;
+    filter: grayscale(1);
+  }
+
+  .container1 {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .header-col2 {
+    width: 90%;
+    float: left;
+    margin: 5px 0px;
+    height: 20%;
+  }
+
+  .header-col6 {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
+
+  .header-col4 {
+    width: 0%;
+    justify-content: flex-end;
+    visibility: hidden;
+    position: relative;
+    height: 0%;
+  }
+
+  .header-icon {
+    width: 10%;
+    justify-content: flex-end;
+    visibility: visible;
+    margin-top: 3px;
+  }
+
+  .dashboard-col4 {
+    width: 100%;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  .dashboard-col8 {
+    width: 100%;
+  }
+
+  .dashboard-col4 {
+    width: 0%;
+  }
+
+  .dashboard-maintext {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .dashboard-maintext-small {
+    visibility: visible;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .dashboard-maintext h1 {
+    font-size: 30px;
+  }
+
+  .dashboard-maintext p {
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+  }
+
+  .dashboard-maintext h1, p {
+    margin: 0px;
+    padding: 3px;
+  }
+
+  .align-small {
+    display: flex;
+    height: 20%;
+  }
+
+  .header-padding {
+    padding: 0 15px;
+  }
+
+  .header-brand-name {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 5px;
+  }
+
+  .button-padding {
+    border-radius: 10px;
+    padding: 9px 55px;
+    margin: 5px 10px;
+    width: 100%;
+  }
+
+  .login-padding {
+    border: 1px solid #0FB2BA;
+    color: #0FB2BA;
+    background-color: #152452;
+  }
+
+  .signup-padding {
+    background-color: #0FB2BA;
+    color: black;
+    border: 2px solid #0FB2BA;
+  }
+
+  .header-brand-name {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-left: 10px;
+    font-size: 25px;
+  }
+
+  .dashboard-col4 img {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .dashboard-button {
+    margin-top: 25px;
+  }
+
+  .logo-last {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 951px) and (min-width: 521px) {
+  .header-col2 {
+    width: 90%;
+    float: left;
+    margin: 5px 0px;
+    height: 20%;
+  }
+
+  .header-col6 {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
+
+  .header-col4 {
+    width: 0%;
+    justify-content: flex-end;
+    visibility: hidden;
+    position: relative;
+    height: 0%;
+  }
+
+  .header-icon {
+    width: 10%;
+    justify-content: flex-end;
+    visibility: visible;
+    margin-top: 3px;
+  }
+
+  .dashboard-col4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  .dashboard-col8 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .dashboard-maintext {
+    margin: 15px;
+    text-align: center;
+  }
+
+  .dashboard-maintext-small {
+    visibility: visible;
+    text-align: center;
+  }
+
+  .dashboard-maintext h1 {
+    font-size: 35px;
+  }
+
+  .dashboard-maintext p {
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+  }
+
+  .dashboard-maintext h1, p {
+    margin: 0px;
+    padding: 3px;
+  }
+
+  .align-small {
+    display: flex;
+    height: 20%;
+  }
+
+  .header-padding {
+    padding: 0 15px;
+  }
+
+  .header-brand-name {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 5px;
+  }
+
+  .button-padding {
+    border-radius: 10px;
+    padding: 9px 35px;
+    margin: 5px 10px;
+  }
+
+  .login-padding {
+    border: 1px solid #0FB2BA;
+    color: #0FB2BA;
+    background-color: #152452;
+    width: 40%;
+  }
+
+  .signup-padding {
+    background-color: #0FB2BA;
+    color: black;
+    border: 0px;
+    width: 40%;
+  }
+
+  .header-brand-name {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-left: 10px;
+    font-size: 25px;
+  }
+
+  .dashboard-col4 img {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .dashboard-button {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .logo-last {
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=dashboardcss.css.map */
