@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Factorial Sum</title>
+        <link rel="stylesheet" href="ConsecutiveSum.css">
+    </head>
+    <body>
+        <section class="align-center">
+            <h1>Sum of digits factorial</h1>
+            <form action="javascript:result()">
+                <div class="input-wrap">
+                    <label>Enter the Number</label>
+                    <input type="number" class="input-box" placeholder="Enter A Number..." id="num" name="num"/>
+                </div>
+                <div class="input-wrap-button">
+                    <input type="submit" class="input-button" value="Result"/>
+                </div>
+            </form>
+            <div class="result-fact">
+                <h1 id="result"></h1>
+            </div>
+        </section>
+        <script>
+            var factorial = (n) => {
+                if(n==0)
+                return 1
+                else
+                return n*factorial(n-1)
+            }
+
+            var sumOfFact = (n) => {
+                let sum=0;
+                n.forEach(num => {
+                    sum+=num;
+                })
+                return sum;
+            }
+
+            var sumOfDigits = (n) => {
+                let sum=0;
+                while(n){
+                    sum+=(n%10);
+                    n=Math.floor(n/10); 
+                }
+                return sum;
+            }
+
+            var checkNumber = (n) => {
+                while(n>9)
+                    n=sumOfDigits(n)
+                    document.getElementById("result").innerHTML = `Sum : ${n}`;
+            }
+
+            function result(){
+                var facinput=document.getElementById('num').value;
+                facinput=String(facinput);
+                facinput=Array.from(facinput);
+
+                var facarray=[];
+                facinput.forEach(str => {
+                facarray.push(Number(str));
+                });
+
+                var factvalue = [];
+                factvalue=facarray.map(factorial);
+
+                var output = sumOfFact(factvalue)
+                console.log(output);
+                checkNumber(output)
+            }
+        </script>
+    </body>
+</html>

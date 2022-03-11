@@ -1,0 +1,72 @@
+$font:Georgia;
+$color:white;
+$background-color:#3b3534;
+$button-color:#e6351e;
+$border-radius:10px;
+$padding:10px;
+$input-width:300px;
+
+body{
+    background-color: $background-color;
+}
+
+.align-center{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.align-center h1{
+    font-family: $font;
+    font-size: 30px;
+    color: $color;
+    padding: $padding;
+}
+
+label{
+    font-family: $font;
+    font-size: 20px;
+    color: $color;
+    padding: $padding;
+}
+
+.input-box{
+    font-family: $font;
+    font-size: 15px;
+    border-radius: $border-radius;
+    color: $color;
+    background-color: $background-color;
+    padding: $padding;
+    width: $input-width;
+}
+
+.input-box:focus{
+    outline: none;
+    width: $input-width+50px;
+}
+
+.input-button{
+    font-family: $font;
+    font-size: 20px;
+    color: $color;
+    background-color: $button-color;
+    border-radius: $border-radius;
+    width: $input-width;
+    height: 50px;
+}
+
+.input-wrap-button{
+    padding-left: 100px;
+}
+
+.input-wrap{
+    margin: 30px;
+}
+
+.result{
+    padding-left: 80px;
+}
+
+.result-fact{
+    padding-left: 150px;
+}
