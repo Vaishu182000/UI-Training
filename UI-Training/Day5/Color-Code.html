@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Color-Picker</title>
+        <link rel="stylesheet" href="Color-Code.css">
+    </head>
+    <body>
+        <header>
+            <div class="align-center">
+                <h1>Color Picking Challange</h1>
+                <h4 id="message"></h4>
+            </div>
+        </header>
+        <div class="display">
+            <section class="question-section">
+                <button class="buttons start-button" id="start" onclick="start()">Start</button>
+                <button class="buttons reset-button" id="reset" onclick="reset()">Reset</button>
+                <h3>Color Code</h3>
+                <h2 id="question-code">Give it a Try!!</h2>
+                <hr/>
+                <h3>Your Score</h3>
+                <h2 id="score">0</h2>
+            </section>
+            <section class="option-section">
+                <div class="options-container">
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                </div>
+            </section>
+        </div>
+        <script>
+            var numSquares = 6;
+            var colors = generateRandomColors(numSquares);
+            var option = document.querySelectorAll(".option");
+            var pickedColor = pickColor();
+            var questionCode = document.getElementById("question-code");
+            var scoreUpdate = document.getElementById("score");
+            var message = document.querySelector("#message");
+            var resetButton = document.querySelector("#reset");
+            var startButton = document.querySelector("#start");
+            var score = 0;
+            var answerClick = 0;
+
+            function randomColor(){
+                var r = Math.floor(Math.random() * 256)
+                var g = Math.floor(Math.random() * 256)
+                var b = Math.floor(Math.random() * 256)
+                return "rgb(" + r +", " + g + ", " + b +")";
+            }
+
+            function generateRandomColors(num){
+                var arr = []
+                for (var i = 0; i < num; i++) {
+                    arr.push(randomColor())
+                }
+                return arr;
+            }
+
+            function changeColors(color){
+                console.log("came in");
+                for (var i = 0; i < option.length; i++) {
+                    option[i].style.background = color;
+                }
+            }
+
+            function pickColor(){
+                var random = Math.floor(Math.random() * colors.length)
+                return colors[random];
+            }
+
+            function start(){
+                colors = generateRandomColors(numSquares);
+                pickedColor = pickColor();
+                questionCode.textContent = pickedColor;
+                for(var i = 0; i < option.length; i++) {
+                    option[i].style.background = colors[i];
+                    option[i].style.display = "block";
+                }
+                
+                questionCode.textContent = pickedColor;
+
+                for(var i = 0; i < option.length; i++) {
+                option[i].style.background = colors[i];
+                option[i].addEventListener("click", function() {
+                    var clickedColor = this.style.background;
+                    if (clickedColor === pickedColor) {
+                        message.textContent = "Good Job!😎";
+                        resetButton.textContent = "Play Again";
+                        questionCode.textContent = "Play Again";
+                        score += 10;
+                        answerClick = 0;
+                        scoreUpdate.textContent = score;
+                        changeColors(clickedColor);
+                        alert("Congrats!! That was a Good Job🥳");
+                    }else{
+                        this.style.background = "#232323";
+                        message.textContent = "Wrong Answer!!!";
+                        answerClick += 1;
+                        if(answerClick >= 3){
+                            message.textContent = "3 Chances are Over...🙃";
+                            questionCode.textContent = "Just Give another Try!!"
+                            resetButton.textContent = "Play Again";
+                            score -= 10;
+                            scoreUpdate.textContent = score;
+                            changeColors("white");
+                            alert("-10 Marks As all 3 Chances are Over");
+                        }
+                    }
+                })
+                }
+            }
+
+            function reset(){
+                colors = generateRandomColors(numSquares);
+                pickedColor = pickColor();
+                answerClick = 0;
+                questionCode.textContent = pickedColor;
+                this.textContent = "New Color";
+                message.textContent = "";
+                for (var i = 0; i < option.length; i++) {
+                    option[i].style.background = colors[i];
+                }
+            }
+        </script>
+    </body>
+</html>
